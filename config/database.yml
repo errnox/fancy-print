@@ -1,0 +1,20 @@
+development:
+  adapter: sqlite3
+  encoding: unicode
+  database: development
+  host: localhost
+  timeout: 5000
+
+test:
+  adapter: sqlite3
+  encoding: unicode
+  database: test
+  host: localhost
+  timeout: 5000
+
+production:
+  adapter: sqlite3
+  encoding: unicode
+  database: db
+  host: localhost
+  timeout: 5000

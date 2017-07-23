@@ -1,0 +1,32 @@
+%div.row
+
+%div#welcome-message.row.jumbotron
+  %div.col.col-md-8.col-md-offset-2
+    %h2.text-center.text-muted There is no output yet.
+    %hr
+    %div.well
+      %p.text-center
+        %i.fa.fa-code
+        Include this Ruby code in your program:
+      %pre
+        = preserve do
+          :escaped
+            require 'fancy'
+
+            fp_text 'This is some output.', :msg => 'Here is some text.'
+    %hr
+    %p.text-muted.text-center or
+    %hr
+    %div.well
+      %p.text-center
+        %i.fa.fa-terminal
+        Run this shell command.
+      %pre
+        = preserve do
+          :escaped
+            fancy text "This is some output." --msg="Here is some text."
+
+-# %hr
+
+%div.row
+  %div#output.col.col-md-12

@@ -1,0 +1,46 @@
+!!! html
+%html
+  %head
+    %link{:href => 'assets/app.css', :rel => 'stylesheet', :type => 'text/css'}
+    %meta{:charset => 'utf-8'}
+  %body
+
+    %div.panel.navbar.navbar-default{:role => 'navigation'}
+      %div.container
+        %div.navbar-header
+          %button.navbar-toggle{:type => 'button', 'data-toggle' => 'collapse', 'data-target' => '#main-navbar-collapse'} More
+          %strong
+            %a.navbar-brand{:href => path(:home_path)}
+              %i.fa.fa-print
+              FancyPrint
+        %div#main-navbar-collapse.collapse.navbar-collapse
+          %ul.nav.navbar-nav.pull-right
+            %li
+              %a#client-info-button{:href => '#'}
+                %i.fa.fa-fw.fa-code
+                Client
+            %li
+              %a#api-info-button{:href => '#'}
+                %i.fa.fa-fw.fa-cloud
+                API
+            %li
+              %a#cli-info-button{:href => '#'}
+                %i.fa.fa-fw.fa-terminal
+                CLI
+
+    %div#info-modal.modal.fade{'tabindex' => '-1', 'role' => 'dialog', 'aria-hidden' => 'true'}
+      %div.modal-dialog
+        %div.modal-content
+          %div.modal-header
+            %button.close{'type' => 'button', 'data-dismiss' => 'modal'}
+              %span{'aria-hidden' => 'true'} &times;
+              %span.sr-only Close;
+            %span &nbsp;
+          %div.modal-body
+          %div.modal-footer
+            %button.btn.btn-default{'type' => 'button', 'data-dismiss' => 'modal'} OK
+
+    %div.container
+      = yield
+
+    %script{:type => 'text/javascript', :src => 'assets/app.js'}

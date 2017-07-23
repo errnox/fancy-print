@@ -1,0 +1,80 @@
+# Line Plot
+<% 20.times do |n|  %>
+output_line_plot_<%= n %>:
+  data: "{data: [[[0, 1], [1, 10], [3, 20]]], scatter: false}"
+  datatype: "plot"
+  description: "This is a description."
+  datetime: <%= Time.now %>
+<% end %>
+
+# Scatter Plot
+<% 20.times do |n|  %>
+output_scatter_plot_<%= n %>:
+  data: "{data: [[[0, 1], [1, 10], [3, 20]]], scatter: true}"
+  datatype: "plot"
+  description: "This is a description."
+  datetime: <%= Time.now %>
+<% end %>
+
+# Diff
+<% 20.times do |n|  %>
+output_diff_<%= n %>:
+  data: "{a: \"This is some text.\", b: \"This is some other text\"}"
+  datatype: "diff"
+  description: "This is a description."
+  datetime: <%= Time.now %>
+<% end %>
+
+# Text
+<% 20.times do |n|  %>
+output_text_<%= n %>:
+  data: "This is some text #{<%= n %>}."
+  datatype: "text"
+  description: "This is a description."
+  datetime: <%= Time.now %>
+<% end %>
+
+# Markup
+<% 20.times do |n|  %>
+output_markup_<%= n %>:
+  data: "{data: \"# Markdown\", lang: \"md\"}"
+  datatype: "markdown"
+  description: "This is a description."
+  datetime: <%= Time.now %>
+<% end %>
+
+# HTML
+<% 20.times do |n|  %>
+output_html_<%= n %>:
+  data: "<p>This is some HTML.</p>"
+  datatype: "html"
+  description: "This is a description."
+  datetime: <%= Time.now %>
+<% end %>
+
+# Image
+<% 20.times do |n|  %>
+output_image_<%= n %>:
+  data: ""
+  datatype: "image"
+  description: "This is a description."
+  datetime: <%= Time.now %>
+<% end %>
+
+# Table
+<% 20.times do |n|  %>
+output_table_<%= n %>:
+  data: "data: \"\", head: false"
+  datatype: "table"
+  description: "This is a description."
+  datetime: <%= Time.now %>
+<% end %>
+
+# HAML
+<% 20.times do |n|  %>
+output_haml_<%= n %>:
+  data: "%p This is some HAML."
+  datatype: "haml"
+  description: "This is a description."
+  datetime: <%= Time.now %>
+<% end %>

@@ -1,0 +1,18 @@
+@import 'partials/vendor/bootstrap.min';
+@import 'partials/vendor/font-awesome.min';
+
+/* @import 'compass'; */
+
+
+// Variable definitions
+
+$black: #121212;
+$light_grey: #E8E8E8;
+$dark_grey: #A3A3A3;
+$white: #F1F1F1;
+
+
+// Imports
+// (Should have access to all the variables defined here.)
+
+@import 'partials/diverse';

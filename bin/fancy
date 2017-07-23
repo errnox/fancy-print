@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+
+# require 'docopt'
+# require 'json'
+# require 'yaml'
+# require_relative '../lib/fancy_print/client/fancy_print'
+
+require_relative '../lib/fancy_print/cli/cli'
+
+FancyPrint::CLI.run(File.basename(__FILE__))

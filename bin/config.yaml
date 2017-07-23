@@ -1,0 +1,6 @@
+---
+:host: localhost
+:port: 4321
+:websocket_port: 5503
+:websocket_host: localhost
+:no_xss: false

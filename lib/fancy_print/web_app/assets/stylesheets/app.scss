@@ -1,0 +1,149 @@
+@import 'base';
+
+.zoom-toggle {
+  margin-left: 30px;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+/* Diffs */
+.diff {
+  overflow: auto;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #EAEAEA;
+}
+
+.diff ul {
+  background: #fff;
+  overflow: auto;
+  font-size: 13px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: table;
+  width: 100%;
+}
+
+.diff del, .diff ins {
+  display: block;
+  text-decoration: none;
+}
+
+.diff li{
+  padding: 0;
+  display: table-row;
+  margin:  0;
+  height: 1em;
+}
+
+.diff li.ins {
+  background: #ddffdd;
+  color: #008800;
+}
+
+.diff li.del{
+  background: #ffeeee;
+  color: #bb0000;
+}
+
+.diff li:hover {
+  background: #ffffcc;
+}
+
+/* try 'white-space: pre;' if you don't want lines to wrap, else `pre-wrap' */
+.diff del, .diff ins, .diff span {
+  white-space: pre;
+  font-family: courier;
+}
+
+.diff del strong {
+  font-weight: normal;
+  background: #ffcccc;
+}
+
+.diff ins strong {
+  font-weight: normal;
+  background: #99ff99;
+}
+
+.diff li.diff-comment {
+  display: none;
+}
+
+.diff li.diff-block-info {
+  background: none repeat scroll 0 0 gray;
+}
+
+/* Line numbers */
+
+.line-numbers {
+  display: table-column;
+  width: 70px;
+  position: absolute;
+}
+
+.line-number {
+  background-color: #F8F8F8;
+  color: #121212;
+  margin-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 5px;
+  width: 50px;
+  float: left;
+  display: table-cell;
+  text-align: right;
+  line-height: 19.5px;
+  font-size: 13px;
+  font-family: courier;
+  margin-left: -5px;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 5px solid #FFFFFF;
+}
+
+.diff ul {
+  padding-left: 50px;
+}
+
+.diff * {
+  line-height: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Text */
+
+.text-highlighted {
+  background-color: #FFFF00;
+}
+
+.output-card div {
+  background-color: #FFFFFF;
+}
+
+.text-output {
+  padding: 5px;
+  border: 1px solid #EAEAEA;
+  border-radius: 3px;
+}
+
+.text-output .pre {
+  line-height: 20px;
+  font-size: 13px;
+  font-family: courier;
+  white-space: pre;
+  overflow: auto;
+  padding-left: 50px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
